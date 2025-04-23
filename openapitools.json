@@ -1,0 +1,25 @@
+{
+	"$schema": "node_modules/@openapitools/openapi-generator-cli/config.schema.json",
+	"spaces": 2,
+	"generator-cli": {
+		"version": "6.6.0",
+		"generators": {
+			"api": {
+				"generatorName": "typescript-axios",
+				"inputSpec": "https://api.upnance.com/openapi-json",
+				"output": "./src/__generated__/upnance",
+				"additionalProperties": {
+					"stringEnums": "true",
+					"removeEnumValuePrefix": "false",
+					"nullSafeAdditionalProps": "true",
+					"enumPropertyNaming": "UPPERCASE",
+					"paramNaming": "camelCase",
+					"useSingleRequestParameter": "true",
+					"withSeparateModelsAndApi": "true",
+					"apiPackage": "api",
+					"modelPackage": "model"
+				}
+			}
+		}
+	}
+}

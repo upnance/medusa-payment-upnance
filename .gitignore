@@ -1,0 +1,7 @@
+wwwroot/*.js
+node_modules
+.serverless
+typings
+dist
+.env
+.env.local
