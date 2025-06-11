@@ -14,7 +14,7 @@ An official Medusa plugin to integrate <strong>Upnance</strong> payments for sea
 
 <p align="center">
   <a href="https://medusajs.com">
-    <img src="https://img.shields.io/badge/Medusa-^2.7.0-blue?logo=medusa" alt="Medusa Version" />
+    <img src="https://img.shields.io/badge/Medusa-^2.6.1-blue?logo=medusa" alt="Medusa Version" />
   </a>
 </p>
 
