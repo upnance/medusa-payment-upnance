@@ -61,7 +61,7 @@ module.exports = defineConfig({
       options: {
         providers: [
           {
-            resolve: "medusa-payment-upnance/src",
+            resolve: "medusa-payment-upnance/providers/upnance",
             id: "upnance",
             options: {
               apiKey: process.env.UPNANCE_API_KEY,
