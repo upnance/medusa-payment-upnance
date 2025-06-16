@@ -88,7 +88,13 @@ export class UpnanceProvider extends AbstractPaymentProvider<UpnanceOptions> {
   constructor(container: any, options: UpnanceOptions) {
     super(container, options);
 
-    const basePath = new URL('', options.environment === 'production' ? API_PRODUCTION_URL : API_STAGING_URL).href + '/';
+    const basePath =
+      new URL(
+        "",
+        options.environment === "production"
+          ? API_PRODUCTION_URL
+          : API_STAGING_URL
+      ).href + "/";
 
     this.upnanceClient = new UpnanceApi(
       new Configuration({
@@ -149,7 +155,6 @@ export class UpnanceProvider extends AbstractPaymentProvider<UpnanceOptions> {
         id: payment.id,
         payInCardLinkControllerArgs: { charge: this.options.autoCapture },
       });
-
 
       return {
         data: {
